@@ -6849,16 +6849,25 @@ body {
 }
 .subnav-left {
   float: left;
-  margin-top: 8px;
+  margin-top: -7px;
   margin-left: 5px;
   font-family: "Oswald", Verdana !important;
   font-size: 24px;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: normal;
 }
 @media (min-width: 768px) {
   .subnav-left {
+    margin-top: 8px;
+    font-size: 27px;
+    letter-spacing: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .subnav-left {
     font-size: 34px;
+    letter-spacing: 16px;
   }
 }
 .subnav-left span:first-of-type {
@@ -6871,9 +6880,8 @@ body {
 .head-title-wrapper {
   margin-top: 7px;
 }
-.subnav-wrapper {
-  height: 30px;
-  color: #fff;
+.mobile-van {
+  float: right;
 }
 .sub-nav {
   margin-top: 20px;

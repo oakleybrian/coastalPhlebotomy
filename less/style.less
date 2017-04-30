@@ -205,15 +205,23 @@ body {
 
 .subnav-left {
     float: left;
-    margin-top: 8px;
+    margin-top: -7px;
+    margin-left: 5px;
     font-family: @font-oswald !important;
     font-size: 24px;
-    margin-left: 5px;
     text-transform: uppercase;
+    letter-spacing: normal;
     color: @white;
     
     @media (min-width: @screen-tablet) {
+        font-size: 27px;
+        letter-spacing: 5px;
+        margin-top: 8px;
+    }
+    
+    @media (min-width: @screen-desktop) {
         font-size: 34px;
+        letter-spacing: 16px;
     }
     
     span:first-of-type {
@@ -234,9 +242,8 @@ body {
     //margin-top: 15px;
 }
 
-.subnav-wrapper {
-    height: 30px;
-    color: @white;
+.mobile-van {
+    float: right;
 }
 
 .sub-nav {
