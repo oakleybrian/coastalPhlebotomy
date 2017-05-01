@@ -63,6 +63,7 @@ Section comment block
 // bootstrap default for tablet is 768px
 @screen-tablet-md-max: 800px;
 @screen-tablet-md-min: 780px;
+@screen-tablet-large: 1024px;
 
 /* ==========================================================================
   Mixins
@@ -213,6 +214,7 @@ body {
     text-transform: uppercase;
     letter-spacing: normal;
     color: @white;
+    white-space: nowrap;
     
     @media (min-width: @screen-tablet) {
         font-size: 27px;
@@ -224,6 +226,21 @@ body {
         font-size: 34px;
         letter-spacing: 16px;
     }
+    
+    @media (min-width: @screen-lg-desktop) {
+        margin-left: 100px;
+    }
+    
+    //@media screen and (max-width: @screen-lg-desktop) and (min-width: @screen-tablet-large) {
+    //    font-size: 34px;
+    //    letter-spacing: 16px;
+    //    margin-left: 150px;
+    //}
+    
+    
+    //@media (max-width: @screen-desktop) {
+    //    margin-left: 150px;
+    //}
     
     span:first-of-type {
         margin-right: -6px;
@@ -245,6 +262,12 @@ body {
 
 .mobile-van {
     float: right;
+
+    img {
+        width: auto;
+        height: 65px;
+        margin-top: 5px;
+    }
 }
 
 .sub-nav {
@@ -422,7 +445,7 @@ body {
     
     ul {
         list-style: none;
-        margin: 20px 0 25px 10px;
+        margin: 20px 18px 25px 10px;
         padding-left: 5px;
     }
     
