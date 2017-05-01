@@ -7032,9 +7032,11 @@ body {
 }
 .info-footer ul {
   padding-left: 5px;
-  margin-bottom: 25px;
-  margin-left: 10px;
+  margin: 20px 0 25px 10px;
   list-style: none;
+}
+.info-footer .social {
+  text-align: center;
 }
 .info-footer .social a:link {
   color: #fff;
