@@ -306,6 +306,8 @@ body {
 }
 
 #myNavbar {
+    margin-left: 170px;
+    
     ul li {
         font-family: @font-nav;
         font-weight: 300;
@@ -401,6 +403,7 @@ body {
 //START MAIN SECTION
 
 .main-wrapper {
+    margin-bottom: 50px;
     
     .services-wrapper {
         h1 {
@@ -481,11 +484,13 @@ body {
         margin-bottom: 15px;
     }
     
-    .phone {
+    .phone-fax {
         font-family: @font-roboto;
-        font-size: 35px;
+        font-size: 20px;
         font-weight: bold;
         text-align: center;
+        text-transform: lowercase;
+        letter-spacing: 2px;
         
         a {
             &:link {
@@ -503,7 +508,12 @@ body {
             }
         }
         
-        
+        .phone, .fax {
+            display: block;
+        }
+        .fax {
+            font-size: 20px;
+        }
     }
     
     &.footer1 {

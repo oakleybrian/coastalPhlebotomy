@@ -6924,6 +6924,9 @@ body {
 .main-nav li:hover a {
   color: #fff !important;
 }
+#myNavbar {
+  margin-left: 170px;
+}
 #myNavbar ul li {
   font-family: "Myriad Pro", Verdana, sans-serif;
   font-weight: 300;
@@ -6999,6 +7002,9 @@ body {
 .glyphicon-chevron-left {
   color: #000;
 }
+.main-wrapper {
+  margin-bottom: 50px;
+}
 .container-footer {
   background-color: #333;
 }
@@ -7071,24 +7077,33 @@ body {
 .info-footer .logo-footer {
   margin-bottom: 15px;
 }
-.info-footer .phone {
+.info-footer .phone-fax {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 2px;
 }
-.info-footer .phone a:link {
+.info-footer .phone-fax a:link {
   color: #fff;
   text-decoration: none;
 }
-.info-footer .phone a:hover {
+.info-footer .phone-fax a:hover {
   color: #48a3fb;
 }
-.info-footer .phone a:visited {
+.info-footer .phone-fax a:visited {
   color: #7b7a7a;
 }
-.info-footer .phone a:active {
+.info-footer .phone-fax a:active {
   color: #fff;
+}
+.info-footer .phone-fax .phone,
+.info-footer .phone-fax .fax {
+  display: block;
+}
+.info-footer .phone-fax .fax {
+  font-size: 20px;
 }
 .info-footer.footer2 {
   margin-top: 13px;
