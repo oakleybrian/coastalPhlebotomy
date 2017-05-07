@@ -356,10 +356,14 @@ body {
     
     .carousel-caption {
         width: 50%;
-        top: 10%;
+        top: -35%;
         left: 50%;
         color: @black;
         font-family: @font-subnav;
+        
+        @media (min-width: @screen-tablet) {
+            top: 10%;
+        }
         
         h1 {
             font-size: 16px;
@@ -372,14 +376,19 @@ body {
         p {
             font-size: 12px;
             
-            &:nth-child(3) {
-                color: @blue;
-            }
-            
             @media (min-width: @screen-tablet) {
                 font-size: 20px;
             }
             
+        }
+    }
+    
+    // Hide 3 dots for slides on mobile. they cover up the contents too much
+    .carousel-indicators {
+        display: none;
+        
+        @media (min-width: @screen-tablet) {
+            display: block;
         }
     }
 }
@@ -398,6 +407,10 @@ body {
 
 .glyphicon-chevron-right, .glyphicon-chevron-left {
     color: @black;
+}
+
+.glyphicon-chevron-right {
+    //margin-right: -50px !important;
 }
 
 //START MAIN SECTION

@@ -6963,11 +6963,16 @@ body {
   }
 }
 #myCarousel .carousel-caption {
-  top: 10%;
+  top: -35%;
   left: 50%;
   width: 50%;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #000;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-caption {
+    top: 10%;
+  }
 }
 #myCarousel .carousel-caption h1 {
   font-size: 16px;
@@ -6980,12 +6985,17 @@ body {
 #myCarousel .carousel-caption p {
   font-size: 12px;
 }
-#myCarousel .carousel-caption p:nth-child(3) {
-  color: #48a3fb;
-}
 @media (min-width: 768px) {
   #myCarousel .carousel-caption p {
     font-size: 20px;
+  }
+}
+#myCarousel .carousel-indicators {
+  display: none;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-indicators {
+    display: block;
   }
 }
 .carousel-control.left,
