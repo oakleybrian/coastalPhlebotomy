@@ -113,6 +113,10 @@ body {
         width: 1012px;
     }
 }
+// global font size larger for elder people
+p {
+    font-size: 15px;
+}
 
 .btn {
     color: @black;
@@ -409,8 +413,23 @@ body {
     color: @black;
 }
 
+// hide chevron's on phone to save space
 .glyphicon-chevron-right {
-    //margin-right: -50px !important;
+    display: none !important;
+    
+    @media (min-width: @screen-phone) {
+        display: block !important;
+        right: 20% !important;
+    }
+}
+
+.glyphicon-chevron-left {
+    display: none !important;
+    
+    @media (min-width: @screen-phone) {
+        display: block !important;
+        left: 20% !important;
+    }
 }
 
 //START MAIN SECTION
@@ -429,6 +448,52 @@ body {
 }
 
 //END MAIN SECTION
+
+
+
+
+// START CONTACT SECTION
+
+// contact section
+.contact-desc {
+    margin-bottom: 40px;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+// office hours section
+
+.office-hours {
+    margin-top: 40px;
+}
+
+.table-office-hours {
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+}
+tr {
+    height: 25px;
+    border-bottom: 1px dotted @gray-medium;
+}
+
+.office-hours {
+    h3 {
+        margin-bottom: 25px;
+    }
+}
+// END CONTACT SECTION
+
+
+
+
+
+
+
 
 // START FOOTER SECTION
 .container-footer {
