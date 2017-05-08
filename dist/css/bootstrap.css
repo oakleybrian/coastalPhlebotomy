@@ -7083,15 +7083,15 @@ tr {
 .services-wrapper div:last-of-type {
   margin-bottom: 50px;
 }
-.all-services {
+.all-services-wrapper .all-services {
   padding-left: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.all-services h3 {
+.all-services-wrapper .all-services h3 {
   margin-bottom: 25px;
 }
-.all-services p {
+.all-services-wrapper .all-services p {
   margin-bottom: 10px;
 }
 .container-footer {
