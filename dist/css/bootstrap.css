@@ -6802,11 +6802,6 @@ Section comment block
 body {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif !important;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1012px;
-  }
-}
 p {
   font-size: 15px;
 }
