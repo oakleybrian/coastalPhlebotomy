@@ -679,8 +679,28 @@ tr {
         
     }
     
-    .wahoo {
-        margin: 0 auto;
+    .logo-wahoo {
+        text-align: center;
+    
+        a {
+            &:link {
+                color: @white;
+                text-decoration: none;
+            }
+            &:hover {
+                color: @gray-medium;
+            }
+            &:visited {
+                color: @gray-medium;
+            }
+            &:active {
+                color: @white;
+            }
+        }
+        
+        .wahoo {
+            margin: 0 auto;
+        }
     }
 }
 // END FOOTER SECTION

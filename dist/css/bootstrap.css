@@ -7278,7 +7278,23 @@ tr {
 .info-footer.footer2 .email {
   margin-bottom: 20px;
 }
-.info-footer .wahoo {
+.info-footer .logo-wahoo {
+  text-align: center;
+}
+.info-footer .logo-wahoo a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.info-footer .logo-wahoo a:hover {
+  color: #7b7a7a;
+}
+.info-footer .logo-wahoo a:visited {
+  color: #7b7a7a;
+}
+.info-footer .logo-wahoo a:active {
+  color: #fff;
+}
+.info-footer .logo-wahoo .wahoo {
   margin: 0 auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
