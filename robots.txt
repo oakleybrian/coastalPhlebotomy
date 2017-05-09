@@ -1,2 +1,15 @@
 User-agent: *
-Disallow: /
+
+# disallow all files in these directories
+Disallow: /App_Data/
+Disallow: /css/
+Disallow: /dist/
+Disallow: /docs/
+Disallow: /fonts/
+Disallow: /js/
+
+# disallow these files
+Disallow: /.user.ini
+Disallow: /Default.aspx
+Disallow: /index-orig.html
+Disallow: /version.txt
