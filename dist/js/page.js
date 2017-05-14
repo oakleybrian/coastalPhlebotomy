@@ -3,18 +3,23 @@
  */
 
 $(document).ready(function(){
-    // affixes top nav to be sticky
-    $('#topnavbar').affix({
+    
+    // bh: 5.14.17 applied affix flicker issue
+    $(".wrapper-subnav").affix({
         offset: {
             top: $('#banner').height()
         }
     });
+    
+    $("#topnavbar").height($(".wrapper-subnav").height());
+    
+    
+    
+    // affixes top nav to be sticky
+    // $('#topnavbar').affix({
+    //     offset: {
+    //         top: $('#banner').height()
+    //     }
+    // });
 });
 
-// $(document).ready(function(){
-//     // Load Header and Footer
-//     $(function(){
-//         $(".M04-Header").load("dist/Modules/M04-Header/partial.html");
-//         $(".M05-Footer").load("dist/Modules/M05-Footer/partial.html");
-//     });
-// });

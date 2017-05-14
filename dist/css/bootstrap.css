@@ -6898,8 +6898,7 @@ p {
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
 }
-#topnavbar.affix {
-  position: fixed !important;
+.affix {
   top: 0;
   width: 100%;
 }
@@ -7098,7 +7097,7 @@ p {
   }
 }
 .main-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .home-wrapper {
   border-right: 1px dashed #cccbcb;
